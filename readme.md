@@ -32,9 +32,9 @@ This project was implemented using Python (3.7) and OpenCV (3.4.3). The class `s
 1. [Download and install Python 3.7](https://www.python.org/ftp/python/3.7.0/python-3.7.0.exe)
 
 2. On `cmd`/`Powershell`:
-* Upgrade pip: `python -m pip install --upgrade pip`
+* `python -m pip install --upgrade pip`
 
-* Install OpenCV using the following `cmd`/`Powershell` comand: `pip install opencv-python`
+* `pip install opencv-python`
 
 4. Usage of the test app: `python app.py imageName.extension`
 
