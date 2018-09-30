@@ -9,7 +9,8 @@ I decided to mix the two methods: use the region growing method (Watershed) and 
 
 This project was implemented using Python (3.7) and OpenCV (3.4.3). The class `skinDetector`, available inside `jeanCV.py`, must be imported into your project and be used as follows:
 
-```from jeanCV import skinDetector 
+```
+ from jeanCV import skinDetector 
 
  detector = skinDetector("ImageName.extension")
  detector.find_skin()
