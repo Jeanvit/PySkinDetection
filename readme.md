@@ -4,7 +4,7 @@ A quick research on the internet shows that the color segmentation is widely use
 
 I then decided to search for other methods and found this paper written by [Saxen and Al-Hamadi (2014)](https://www.researchgate.net/publication/267642008_COLOR-BASED_SKIN_SEGMENTATION_AN_EVALUATION_OF_THE_STATE_OF_THE_ART) which shows that region based gives a better output for skin detection tasks.
 
-I decided to mix the two methods to see how they perform together: A region growing (Watershed) and a combination of HSV and YCbCr color segmentation.
+Here, a region growing (Watershed) and a combination of HSV and YCbCr color segmentation work together to produce the output.
 
 
 # How to use
