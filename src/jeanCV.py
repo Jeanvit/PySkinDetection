@@ -22,13 +22,13 @@ class skinDetector(object):
 #================================================================================================================================
 	#function to process the image and segment the skin using the HSV and YCbCr colorspaces, followed by the Watershed algorithm
 	def find_skin(self):
-		self._color_segmentation()
-		self._region_based_segmentation()
+		self.__color_segmentation()
+		self.__region_based_segmentation()
 
 #================================================================================================================================
 	#Apply a threshold to an HSV and YCbCr images, the used values were based on current research papers along with some
 	# empirical tests and visual evaluation
-	def _color_segmentation(self):
+	def __color_segmentation(self):
 		lower_HSV_values = np.array([0, 40, 0], dtype = "uint8")
 		upper_HSV_values = np.array([25, 255, 255], dtype = "uint8")
 
@@ -43,7 +43,7 @@ class skinDetector(object):
 
 #================================================================================================================================
 	#Function that applies Watershed and morphological operations on the thresholded image
-	def _region_based_segmentation(self):
+	def __region_based_segmentation(self):
 		#morphological operations
 		image_foreground = cv2.erode(self.binary_mask_image,None,iterations = 3)     	#remove noise
 		dilated_binary_image = cv2.dilate(self.binary_mask_image,None,iterations = 3)   #The background region is reduced a little because of the dilate operation
